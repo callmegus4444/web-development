@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding : 0;
+    font-family: "Gilroy";
+box-sizing: border-box;
+}
+html ,body{
+    width :100%;
+
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    color:#fff ;
+    z-index: 9999;
+}
+#loader #topheading{
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+#topheading h5{
+ text-align: center;
+ text-transform: uppercase;
+   font-size: 11px;
+   font-weight: 300;
+}
+#loader h1{
+    width: 100%;
+position:absolute;
+display: flex;
+justify-content: center;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%) ;
+font-size: 4vw;
+font-weight: 500;
+}
+.org{
+    color: rgb(232, 113, 29);
+    font-family: "Mazius Review 20.9"
+}
+.child span {
+    display: inline-block;
+}
+.reveal .parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.reveal .parent .child{
+    display: block;
+    
+}
+#orange{
+position: absolute;
+top: 100%;
+height: 100vh;
+width: 100%;
+z-index: 999;
+background-color: rgb(232, 113, 29);
+}
+@media only screen and (max-width: 768px){
+
+}
+#page1{
+    min-height: 100vw;
+    width :100% ;
+    background-color: #efeae3;
+}
+#page1-content{
+    min-height: 0vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #efeae3;
+}  
+#cursor{
+    height: 4vw;
+    width:4vw;
+background-color: rgb(232, 113, 29);
+border-radius: 50%;
+position: fixed;
+z-index:9;
+display: flex;
+align-items: center;
+justify-content: center;
+transform:  translate(-50%,-50%);
+
+}
+nav{
+    z-index: 999;                                                                                                                                                                                                       
+   padding: 2vw 2vw;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+#nav-part1{
+    width: 100%;
+    display: flex;
+  padding: 1rem;
+  z-index: 10;
+}
+#nav-part2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  gap:1vw;
+}
+#nav-part2 h4{
+    padding: 15px 10px;
+    border: 1px  solid #231e1e;
+    border-radius: 50px;
+     font-weight: 500;
+     color:#231e1e ;    
+  transition: all ease 0.3s ;
+     position: relative;
+     font-size: 18px;
+     overflow: hidden;
+}
+#nav-part2 h4::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.3s ;
+}
+#nav-part2 h4:hover::after{
+   bottom: 0; 
+   border-radius: 0;
+}
+#nav-part2 h4 a{
+    color: #231e1e;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+#nav-part2 h4:hover a{
+    color: #fff;
+}
+ .row{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    color:#231e1e;
+    padding :0;
+    line-height: 1;
+    padding-right:12vw ;
+ }
+ .row h1{
+    font-size: 9vw;
+    font-weight: 500;
+    padding-left: 1vw;
+    z-index: 10;
+
+ }
+ .row img{
+padding-left: 4vw;
+ }
+ .row svg{
+    height: 15vw;
+    margin: 0 4vw;
+   
+ }
+ path ,polyline{
+    stroke:rgb(232, 113, 29) ;
+ }
+  #imagery{
+    display: flex ;
+    justify-content: space-between;
+    align-items:center;
+width: 100%;
+padding: 0 7vw;
+margin-top: 20vw;
+ }
+ #imagery #imglef{
+    width:30%;
+    height: auto;
+    z-index: 9;
+ }
+ #imglef h1  {
+    font-size: 2.4vw;
+    font-weight: 200;
+    letter-spacing:1px ;
+    color: #231e1e;
+ }
+ #imglef h1 span {
+    color: rgb(99, 7, 99);
+    font-family: "Mazius Review 20.9" ;
+    font-style: italic;
+    font-weight: 100;
+    z-index: 9;
+ }
+#imgrig{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    width: 60%;
+}
+#imgrig .imgcntnr{
+
+    position: absolute;
+   border-radius:1vw ;
+   width: 30vw;
+   height: 45vw;
+   filter: grayscale();
+ transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#imgrig .imgcntnr:hover{
+   filter: grayscale(0);
+}
+#imgrig .imgcntnr:nth-child(1){
+transform: translate(-30% ,-8%) rotate(-20deg);
+background-image: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-position: center;
+}
+#imgrig .imgcntnr:nth-child(2){
+    transform: translate(-15% ,0%) rotate(-15deg);
+    background-image: url(https://plus.unsplash.com/premium_photo-1661319012427-1647279682f1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2ViJTIwZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+background-position: center;
+    }
+    #imgrig .imgcntnr:nth-child(3){
+        transform:translate(10% ,10%) rotate(-5deg);
+        background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYiUyMGRlc2lnbmVyfGVufDB8fDB8fHww);
+        background-size: cover;
+background-position: center;
+}
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    left: 0;
+    top: 105vh;
+    background-color:  rgb(232, 113, 29);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+}
+
+#hero-1 {
+    background: linear-gradient(rgb(232, 113, 29) ,rgb(200, 109, 44));
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+
+}
+
+#hero-2 {
+    background: linear-gradient( rgb(232, 113, 29), rgb(200, 108, 43));
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#hero-3 {
+    background: linear-gradient( rgb(232, 113, 29), rgb(232, 113, 29));
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, -6%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+@keyframes anime3 {
+    from {
+        transform: translate(54%, 18%);
+}
+    to {  
+        transform: translate(-48%, 33%);
+    }
+}
+#page2{
+    width:100% ;
+    min-height: 100vh;
+    background-color:#efeae3;
+    z-index: 9;
+}
+        
